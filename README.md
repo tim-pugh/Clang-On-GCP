@@ -6,9 +6,19 @@ It's important to note that when you run the second to last command, "cmake -G "
 
 In the event the final step does not work and isn't an "exhausted memory" issue, you'll have to debug.
 
-In the event you DO encounter the "memory exhausted" error, simply re-run make.
+In the event you DO encounter the "memory exhausted" error, simply re-run "make" (the final command). It will pick up from where it left off before the build failed (in otherwords, if it failed at 95%, re-running "make" will have it pick back up at 95%).
 
-If you continue to fail at the same percentage (the build will show you the percentage completed), then you may just not have enough memory in your system, and then turning to GCP would be a good alternative!
+If you continue to fail at the same percentage (the build will show you the percentage completed) and it continues to show the "memory exhausted" error, then you may just not have enough memory in your system, and then turning to GCP would be a good alternative!
+
+The build takes time. You may alternativly subsitute for the final command:
+
+ "make -j replace_this_string_with_the_number_of_cores_in_your_system"
+
+to speed things up, but you are more likley to run into the memory exhausted errors. Re-running with simply "make" will fix this.
+
+
+
+Alright, lets begin.....
 
 
 Required Packages followed by pulling in the code and then building:
