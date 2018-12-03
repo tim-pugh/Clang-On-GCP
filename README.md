@@ -1,8 +1,8 @@
 # Clang-On-GCP
 
-This repo is simply instructions for building Clang on a Google Cloud Platform Instance (GCP) running Ubuntu 18.04 LTS. This will work on 18.04 LTS most anywhere too, I just needed it on GCP and there was two additional packages I need that were pre-installed from a installation on my home computer.
+This repo are instructions for building Clang on a Google Cloud Platform VM instance (GCP) running Ubuntu 18.04 LTS. This will work on 18.04 LTS most anywhere too, I just needed it on GCP.
 
-Required Packages followed by pulling in code and then building:
+Required Packages followed by pulling in the code and then building:
 
 sudo apt install build-essential
 
